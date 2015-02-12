@@ -1,0 +1,14 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<p id="msg"></p>
+
+<%= asset_path("hi.html") %>
+
+<script type="application/javascript">
+    $("#msg").load('/tone #bb',function (r,s,x) {
+        console.log("hi")
+        console.log(r)
+        console.log(s)
+        console.log(x)
+    })
+</script>
